@@ -1,5 +1,15 @@
 # costctl — XBrain W6 side challenge starter
 
+## Team 11 submission status
+
+- Fork remote: `https://github.com/DVQuyet/xbrain-costctl-starter.git`
+- Implemented commands: `list`, `cost`, `terminate`, `tag`, `clean`, `idle`, `migrate-gp3`
+- Final local verification: `25/25` tests passing with `python -m pytest -v tests` on 2026-05-22
+- `make test` note: blocked on this Windows shell because `make` is not installed; the equivalent pytest command passed.
+- Evidence: see `EVIDENCE.md`
+- Reflections: see `REFLECTIONS.md`
+- AWS sample-output note: real account outputs could not be captured because the configured AWS credentials are invalid. See `EVIDENCE.md` for exact AWS errors.
+
 A starter scaffold for a small AWS-resource-management CLI. **The CLI structure
 is built; you implement the command logic.** Fork this repo, fill in the
 stubs, make the tests pass, customize for your group, then submit.
@@ -32,7 +42,7 @@ You're done when all 25 pass.
 
 ```bash
 # 1. Fork / clone
-git clone <your-fork-url> g<N>-costctl && cd g<N>-costctl
+git clone <your-fork-url> g11-costctl && cd g11-costctl
 
 # 2. Install
 make install-dev                   # or: pip install -r requirements-dev.txt
@@ -271,20 +281,20 @@ Add a `REFLECTIONS.md` to your repo. Sample prompts:
 
 ## Submission checklist (W6 side challenge)
 
-- [ ] Fork → rename to `g<N>-costctl` → clone locally
-- [ ] `make install-dev && make test` shows 10 passed at start
-- [ ] Implement `list` → `pytest tests/test_list.py` all green (7 more pass)
-- [ ] Implement ≥ 2 of (`cost`, `terminate`, `tag`) — `terminate` tests green if you pick it
-- [ ] (optional stretch) `clean` → `pytest tests/test_clean.py` green; or `idle` / `migrate-gp3`
-- [ ] `make test` final score reported in README (e.g. "21/25 passing")
-- [ ] Replace `sample_output/*_example.txt` with real outputs from your account
-- [ ] `REFLECTIONS.md` with 2+ answers
-- [ ] At least 3 meaningful commits (init → first command working → final polish)
-- [ ] Replace `g<N>` placeholders throughout README with your real group number
-- [ ] Add Team section with member names
+- [x] Fork remote configured: `https://github.com/DVQuyet/xbrain-costctl-starter.git`
+- [x] Dev dependencies installed with `python -m pip install -r requirements-dev.txt`
+- [x] Implement `list` → `pytest tests/test_list.py` all green (covered by full test run)
+- [x] Implement ≥ 2 of (`cost`, `terminate`, `tag`) — implemented all 3
+- [x] (optional stretch) `clean` → `pytest tests/test_clean.py` green; also implemented `idle` and `migrate-gp3`
+- [x] Final score reported in README: `25/25 passing`
+- [ ] Replace `sample_output/*_example.txt` with real outputs from your account. Blocked on 2026-05-22 by invalid AWS credentials; see `EVIDENCE.md`.
+- [x] `REFLECTIONS.md` with 2+ answers
+- [ ] At least 3 meaningful commits. Current history has 2 commits before final documentation commits.
+- [x] Replace `g11` placeholders throughout README with real group number
+- [x] Add Team section with member names currently known
 - [ ] Tag: `git tag w6-sidechallenge-v1 && git push --tags`
 - [ ] Post link in Slack `#w6-sidechallenge` thread:
-      `G<N> — <repo-url> — implemented: list, cost, terminate (21/25 tests passing)`
+      `G11 — https://github.com/DVQuyet/xbrain-costctl-starter — implemented: list, cost, terminate, tag, clean, idle, migrate-gp3 (25/25 tests passing)`
 
 Reminder: **OPTIONAL and does NOT count toward W6 score.** Recognition is
 separate (Slack callout / Phase 2 selection / portfolio).
@@ -299,11 +309,7 @@ MIT — see `LICENSE`.
 
 ## Team 11
 
-> Replace before submission:
-
-- <DInhVIETQUYET 1>
-- <name 2>
-- <name 3>
+- Dinh Viet Quyet
 
 ---
 
