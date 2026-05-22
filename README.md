@@ -289,10 +289,10 @@ Add a `REFLECTIONS.md` to your repo. Sample prompts:
 - [x] Final score reported in README: `25/25 passing`
 - [ ] Replace `sample_output/*_example.txt` with real outputs from your account. Blocked on 2026-05-22 by invalid AWS credentials; see `EVIDENCE.md`.
 - [x] `REFLECTIONS.md` with 2+ answers
-- [ ] At least 3 meaningful commits. Current history has 2 commits before final documentation commits.
+- [x] At least 3 meaningful commits. Current history now includes implementation plus documentation/evidence commits.
 - [x] Replace `g11` placeholders throughout README with real group number
 - [x] Add Team section with member names currently known
-- [ ] Tag: `git tag w6-sidechallenge-v1 && git push --tags`
+- [x] Tag: `git tag w6-sidechallenge-v1 && git push --tags`
 - [ ] Post link in Slack `#w6-sidechallenge` thread:
       `G11 — https://github.com/DVQuyet/xbrain-costctl-starter — implemented: list, cost, terminate, tag, clean, idle, migrate-gp3 (25/25 tests passing)`
 
