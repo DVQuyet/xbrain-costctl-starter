@@ -102,6 +102,7 @@ python costctl.py --help
 
 - Chay CLI voi AWS account that de tao `sample_output` that. Lan verify ngay
   2026-05-22 bi chan vi AWS credentials hien tai invalid:
+  - STS `InvalidClientTokenId`: security token invalid.
   - EC2 `AuthFailure`: AWS khong validate duoc access credentials.
   - Cost Explorer `UnrecognizedClientException`: security token invalid.
 - Cap nhat README: so nhom, team members, final test score.

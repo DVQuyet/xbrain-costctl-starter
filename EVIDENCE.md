@@ -71,6 +71,18 @@ credentials are invalid. The commands were attempted without fabricating output.
 Command:
 
 ```powershell
+aws sts get-caller-identity
+```
+
+AWS result:
+
+```text
+InvalidClientTokenId: The security token included in the request is invalid.
+```
+
+Command:
+
+```powershell
 python costctl.py list ec2
 ```
 

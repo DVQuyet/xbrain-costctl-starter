@@ -42,7 +42,7 @@ You're done when all 25 pass.
 
 ```bash
 # 1. Fork / clone
-git clone <your-fork-url> g11-costctl && cd g11-costctl
+git clone https://github.com/DVQuyet/xbrain-costctl-starter.git g11-costctl && cd g11-costctl
 
 # 2. Install
 make install-dev                   # or: pip install -r requirements-dev.txt

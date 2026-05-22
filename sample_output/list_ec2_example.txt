@@ -1,8 +1,11 @@
-EC2 (no filter) — 3 found:
-------------------------------------------------------------------------------
-  i-0abc123def456789a       t3.micro       running       Application=HealthBot Environment=dev Owner=alice
-  i-0bbb456ef789012345       t3.small       running       Application=HealthBot Environment=dev Owner=bob
-  i-0ccc789f0123456789       t3.micro       stopped       Application=HealthBot Environment=staging Owner=carol
+Capture attempt: 2026-05-22
+Command: python costctl.py list ec2
 
-# REPLACE WITH REAL OUTPUT from running:
-#   ./costctl.py list ec2 > sample_output/list_ec2_<date>.txt
+Result:
+botocore.exceptions.ClientError: An error occurred (AuthFailure) when calling the DescribeInstances operation: AWS was not able to validate the provided access credentials
+
+Note:
+This replaces the starter fake sample output. Real EC2 account output still
+requires refreshing the AWS default profile credentials, then rerunning:
+
+python costctl.py list ec2
