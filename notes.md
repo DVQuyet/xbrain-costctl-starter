@@ -94,12 +94,19 @@ python costctl.py --help
 - It nhat 2 core commands trong `cost`, `terminate`, `tag`: da implement ca 3.
 - Stretch commands `clean`, `idle`, `migrate-gp3`: da implement.
 - Goal `make test -> 25/25 passing`: dat qua `python -m pytest -v tests`.
+- `python costctl.py --help`: chay thanh cong va hien day du commands.
+- Fork remote da co: `https://github.com/DVQuyet/xbrain-costctl-starter.git`.
+- Upstream remote da co: `https://github.com/TechX-Corp/xbrain-costctl-starter.git`.
 
 ## Viec con lai truoc khi nop bai
 
-- Chay CLI voi AWS account that de tao `sample_output` that.
+- Chay CLI voi AWS account that de tao `sample_output` that. Lan verify ngay
+  2026-05-22 bi chan vi AWS credentials hien tai invalid:
+  - EC2 `AuthFailure`: AWS khong validate duoc access credentials.
+  - Cost Explorer `UnrecognizedClientException`: security token invalid.
 - Cap nhat README: so nhom, team members, final test score.
 - Tao `REFLECTIONS.md` voi it nhat 2 cau tra loi.
+- Tao `EVIDENCE.md` ghi lai test, CLI help, remotes, va loi AWS credentials.
 - Tao public repo/tag submission:
 
 ```bash

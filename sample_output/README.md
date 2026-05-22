@@ -1,5 +1,17 @@
 # sample_output/
 
+## Current capture status
+
+Real account samples were attempted on 2026-05-22, but the configured AWS
+credentials were invalid:
+
+- EC2 list: `AuthFailure`
+- Cost Explorer: `UnrecognizedClientException`
+
+The `*_example.txt` files remain illustrative only until valid AWS credentials
+are configured and the commands below are rerun. See `../EVIDENCE.md` for the
+captured verification details.
+
 These files are **illustrative examples** showing the shape of `costctl`
 output. They are NOT real account data.
 
